@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style-agendamento.css">
+    <link rel="shortcut icon" href="imagens/favicon.png">
+    <script src="js/script-agendamento.js"></script>
+    <title>Prolab</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top box-shadow">
+        <a class="navbar-brand" href="index.html"> <img src="imagens/logo1.png"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse h5" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Exames
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">COVID-19</a>
+                        <a class="dropdown-item" href="#">Gravidez</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Veja Mais</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="agendamento.html">Agendamento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary ml-md-2" href="http://www.prolabubj.com.br/">Resultados</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="box-formulario">
+        <div class="my-5 text-center">
+            <h2 class="display-4 text-primary">AGENDE SUA CONSULTA</h2>
+        </div>
+        <form class="bg-light eounded p-4 box-shadow mb-5>
+            <div class=" form-group">
+            <!-- linha do nome -->
+            <div class="row">
+                <div class="col">
+                    <label for="clienteNome">Nome</label>
+                    <input type="text" class="form-control">
+                </div>
+                <!-- fim linha do nome -->
+                <!-- linha do sobrenome -->
+                <div class="col">
+                    <label for="clienteSobrenome">Sobrenome</label>
+                    <input type="text" class="form-control">
+                </div>
+                <!-- fim linha do sobrenome -->
+            </div>
+
+            <div class="row">
+                <!-- linha do CPF-->
+                <div class="col">
+                    <label for="clienteCPF">CPF</label>
+                    <input type="text" class="form-control" placeholder="000.000.000-00">
+                </div>
+                <!-- fim linha do CPF. AQUI ESTÁ O REQUISITO DO JAVASCRIPT-->
+
+                <div class="col">
+                    <label for="clienteCNPJ">CNPJ</label>
+                    <input type="text" name="cnpj" id="cnpj" class="form-control input-md"
+                        placeholder="00.000.000/0000-00" onkeyup="FormataCnpj(this,event)"
+                        onblur="if(!validarCNPJ(this.value)){alert('CNPJ Informado é inválido'); this.value='';}"
+                        maxlength="18">
+                </div>
+                <!-- fim linha do CNPJ-->
+            </div>
+            <div class="row">
+                <!-- linha do email-->
+                <div class="col">
+                    <label for="exampleInputEmail1">Endereço de email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Seu email">
+                </div>
+                <!-- fim linha do email-->
+            </div>
+            <!-- linha do telefone-->
+            <div class="row">
+                <div class="col">
+                    <label for="clienteTelefone">Telefone de contato</label>
+                    <input type="text" class="form-control" placeholder="(00) 0 0000-0000">
+                </div>
+                <!-- fim linha do telefone-->
+                <!-- linha do telefone-->
+                <div class="col">
+                    <label for="clienteTelefone">Telefone para recado</label>
+                    <input type="text" class="form-control" placeholder="(00) 0 0000-0000">
+                </div>
+                <!-- fim linha do telefone-->
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleFormControlSelect1">Exame</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Selecione</option>
+                        <option>Sorologia para COVID-19</option>
+                        <option>Hemograma Completo</option>
+                        <option>Glicose</option>
+                        <option>Colesterol</option>
+                        <option>Triglicerídeos</option>
+                        <option>Teste do Pezinho</option>
+                        <option>Hepatite</option>
+                        <option>Teste de Gravidez</option>
+                        <option>HIV</option>
+                        <option>Prevenção do colo do útero</option>
+                        <option>Hormônios da Tereóide</option>
+                        <option>Surmário de Urina/Parasitológico</option>
+                        <option>Toxicológico</option>
+                        <option>DNA</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="exampleFormControlSelect1">Data</label>
+                    <div>
+                        <input id="date" type="date">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <label for="exampleFormControlSelect1">Escolha seu horário</label>
+                    <div>
+                        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+
+                <button class="btn btn-primary botao-coleta" type="button" data-toggle="collapse"
+                    data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Coleta domiciliar?
+                </button>
+
+                <div class="collapse collapse-dados" id="collapseExample">
+                    <div class="form-group">
+                        <label for="inputAddress">Endereço</label>
+                        <input type="text" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Ponto de referência</label>
+                        <input type="text" class="form-control" id="inputAddress2">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">Cidade</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Estado</label>
+                            <input type="text" class="form-control" id="inputCity">
+
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">CEP</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group form-check">
+
+                    <button type="submit" class="btn btn-primary botao-enviar">Enviar</button>
+                </div>
+
+
+        </form>
+    </section>
+
+    <footer>
+        <section class="container1">
+            <div class="row1">
+                <div class="col1 col2">
+                    <div class="teste">
+                        <p><img src="imagens/icones/phone-call.png" class="icones-footer telefone" alt="" srcset="">(88)
+                            99809-9423 / (88) 99833-9633</p>
+                        <p><img src="imagens/icones/email.png" class="icones-footer email" alt=""
+                                srcset="">laboratorioprolabubj@hotmail.com</p>
+                        <p> <img src="imagens/icones/lugar.png" class="icones-footer lugar" alt="" srcset="">
+                            Rua
+                            Prudêncio
+                            Furtado, N°211 - Centro - Ubajara /CE</p>
+                    </div>
+                </div>
+
+                <div class="col1 col2">
+                    <div class="teste">
+                        <p>Nos encontre nas redes sociais:</p>
+                        <p><a class="navbar-brand"
+                                href="https://www.facebook.com/Laborat%C3%B3rio-Prolab-Ubajara-114600763661039/">
+                                <img src="imagens/icones/facebook.png" class="icones-footer-1" alt="" srcset="">
+                            </a>
+
+                            <a class="navbar-brand" href="https://www.instagram.com/laboratorioprolabubj/">
+                                <img src="imagens/icones/instagram.png" class="icones-footer-2" alt="" srcset="">
+                            </a>
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <a href="https://api.whatsapp.com/message/5Y67HF2JSJW3I1" class="float" target="_blank">
+        <img src="imagens/icones/whatsapp.png" alt="" width="60px">
+    </a>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

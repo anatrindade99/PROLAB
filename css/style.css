@@ -1,0 +1,193 @@
+/* AQUI FAZ COM QUE AS INFORMAÇÕES DA PÁGINA NAO FIQUEM POR BAIXO
+DO NAVBAR */
+body {
+  padding-top: 96px;
+}
+
+/* SOMBRA DO NAVBAR MENU */
+.box-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+}
+/* SOMBRA DO NAVBAR MENU */
+
+/* COR DO BACKGROUND AO LADO DO CAROUSEL */
+.bg-estilizado {
+  background-color: rgb(138, 138, 138);
+}
+/* FIM COR DO BACKGROUND AO LADO DO CAROUSEL */
+
+/* CARD COM HORÁRIOS */
+.card-horario {
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.card-1 {
+  background-color: steelblue;
+  height: 200px;
+}
+.card-2 {
+  background-color: rgb(105, 159, 202);
+  height: 100px;
+  height: 200px;
+}
+.text-card {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+.text-card-2 {
+  color: white;
+  margin-top: 35px;
+}
+
+@media (max-width: 600px) {
+  .card-horario {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+/* FIM CARD COM HORÁRIOS *
+
+/* SETA PARA VOLTAR PRA CIMA */
+.voltar {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+}
+
+.voltar:hover {
+  cursor: pointer;
+  background-position: 0 -60px;
+}
+/* FIM SETA PARA VOLTAR PRA CIMA */
+
+/* COMEÇO DO NOSSOS SERVIÇOS ICONES E FRASES */
+.icones-width {
+  width: 110px;
+  height: 110px;
+  margin: 20px;
+}
+.text-slide {
+  margin-top: 85px;
+}
+
+.bg-section {
+  height: 200px;
+}
+
+.text-laudo {
+  text-align: center;
+  padding-top: 60px;
+}
+
+/* FIM DO NOSSOS SERVIÇOS ICONES E FRASES */
+
+/* FOOTER TODO ESTILIZADO COM CSS */
+
+footer {
+  box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+.container1 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 20px;
+}
+@media (min-width: 1170px) {
+  .container1 {
+    max-width: 1170px;
+    padding: 0px;
+  }
+}
+.row1 {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.row1::before,
+.row1:after {
+  content: "";
+  display: table;
+}
+.row1::after {
+  clear: both;
+}
+
+.col1 {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  margin-right: -4px;
+}
+@media (min-width: 800px) {
+  .col2 {
+    width: 50%;
+  }
+}
+
+.teste {
+  padding-top: 3px;
+  text-align: center;
+  margin: 2px 0;
+}
+
+.big {
+  height: 50px;
+}
+
+.icones-rodape {
+  margin-left: 50px;
+}
+
+.icones-footer {
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+  margin-left: 100px;
+}
+
+.icones-footer-2,
+.icones-footer-1 {
+  width: 30px;
+  height: 30px;
+}
+
+.telefone,
+.email {
+  margin-left: -25px;
+}
+
+@media (max-width: 600px) {
+  .email {
+    margin-right: 60px;
+  }
+  .lugar {
+    margin-left: 42px;
+  }
+  .telefone {
+    margin-right: 60px;
+  }
+}
+
+/* FOOTER TODO ESTILIZADO COM CSS */
+
+/* ICONE WHATSAPP */
+
+.float {
+  right: 25px;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  text-align: center;
+  z-index: 100;
+}
+
+/* ICONE WHATSAPP */

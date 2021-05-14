@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style-contato.css">
+    <link rel="shortcut icon" href="imagens/favicon.png">
+    <title>Prolab</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top box-shadow">
+        <a class="navbar-brand" href="index.html"> <img src="imagens/logo1.png"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse h5" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Exames
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">COVID-19</a>
+                        <a class="dropdown-item" href="#">Gravidez</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Veja Mais</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="agendamento.html">Agendamento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary ml-md-2" href="http://www.prolabubj.com.br/">Resultados</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container">
+        <div class="my-5 text-center">
+            <span class="h6 d-block">CONTATO</span>
+            <h2 class="display-4 text-primary">FALE CONOSCO</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form class="bg-light eounded p-4 box-shadow mb-5">
+                    <div class="form-group">
+                        <label for="clienteNome">Nome</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">E-mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com
+                            ninguém.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="clienteMensagem">Mensagem:</label>
+                        <textarea id="clienteMensagem" rows="4" class="form-control"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+
+            <!-- AQUI FOI UTILIZADO O ASIDE COMO REQUISITO  -->
+            <aside class="col-lg">
+                <h2 class="h6">NOSSO ENDEREÇO</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.7968589205266!2d-40.92329818524055!3d-3.8537308971967494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x794cafc4dfdb779%3A0x52cb73892f99e8c2!2sR.%20Prud%C3%AAncio%20Furtado%2C%20211%2C%20Ubajara%20-%20CE%2C%2062350-000!5e0!3m2!1spt-BR!2sbr!4v1618352741510!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <h2 class="h6">DADOS DE CONTATO</h2>
+                <ul class="list-unstyled text-secondary">
+                    <li>laboratorioprolabubj@hotmail.com</li>
+                    <li> (88) 99809-9423 / (88) 99833-9633</li>
+                    <li>
+                        Segunda a Sexta: Das 6h00 - 17h00
+                        <p>Sábado: Das 6h00 - 13h00 </p>
+                    </li>
+                </ul>
+
+
+            </aside>
+        </div>
+
+    </section>
+
+    <article class="container">
+        <div class="my-5 text-center">
+            <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6" id="perguntasFrequentes" data-children=".pergunta">
+                <div class="pergunta py-2">
+                    <a class="lead" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta1"
+                        aria-expanded="true" aria-controls="pergunta1">→ Beber água interfere no jejum?</a>
+                    <div id="pergunta1" class="collapse show" role="tabpanel">
+                        <p>Não. Água não interfere no jejum porque não possui calorias e substâncias que interfiram nos
+                            principais metabolismos orgânicos. Porém, para realização do exame de urina, recomenda-se a
+                            ingestão habitual de água para evitar diluição da urina.</p>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="pergunta py-2">
+                    <a class="lead" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta2"
+                        aria-expanded="true" aria-controls="pergunta2">→ Fumar no dia do exame interfere no
+                        resultado?</a>
+                    <div id="pergunta2" class="collapse" role="tabpanel">
+                        <p>Existem exames que sofrem interferência pelo ato de fumar, como os exames de curva glicêmica,
+                            cortisol, carboxihemoglobina. Neste caso, deve-se evitar fumar no dia do exame..</p>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="pergunta py-2">
+                    <a class="lead" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta3"
+                        aria-expanded="true" aria-controls="pergunta3">→ Medicamentos interferem nos exames?</a>
+                    <div id="pergunta3" class="collapse" role="tabpanel">
+                        <p>Alguns resultados de exames podem ser afetados pelo uso de medicamento, portanto, oriente-se
+                            junto ao seu médico para avaliar a necessidade de interrupção temporária de seu uso. Caso
+                            não seja possível, esta informação deve ser levada em conta na interpretação dos resultados.
+                        </p>
+
+                        <p>Existem exames que são realizados especificamente para avaliar a dosagem de um medicamento
+                            ou a sua ação terapêutica. Neste caso, é importante seguir as orientações abaixo:</p>
+
+                        <p>• Manter, obrigatoriamente, o horário usual de tomar o medicamento. Comparecer ao
+                            laboratório para coleta do sangue antes da ingestão da próxima dose ou conforme o pedido
+                            médico.</p>
+
+                        <p> • Estar com a dosagem estável da medicação por pelo menos 2 dias.</p>
+
+                        <p> • Caso o medicamento seja usado apenas uma vez ao dia, a coleta deve ser feita de 12 a 24
+                            horas após a dose.</p>
+
+                        <p> • Caso o medicamento seja usado duas ou mais vezes ao dia, a coleta deve ser feita uma hora
+                            antes da próxima dose.</p>
+
+                        <p> • Em suspeitas de intoxicação, o exame pode ser feito a qualquer momento.</p>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="pergunta py-2">
+                    <a class="lead" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta4"
+                        aria-expanded="true" aria-controls="pergunta4">→ Todos os exames devem ser colhidos pela
+                        manhã?</a>
+                    <div id="pergunta4" class="collapse" role="tabpanel">
+                        <p>Alguns exames são colhidos obrigatoriamente pela manhã, como é o caso do ACTH, Prolactina,
+                            Hormônio do crescimento, por exemplo. Estes exames possuem maior concentração no período da
+                            manhã, sendo o momento ideal para investigar possíveis alterações.
+
+                            Outros exames podem ser colhidos em qualquer momento, pois não exigem preparo ou condição
+                            especial de coleta, como é o caso do hemograma, exames de hepatite, HIV, Toxoplasmose,
+                            Rubéola, Citomegalovírus, entre outros.</p>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="pergunta py-2">
+                    <a class="lead" data-toggle="collapse" data-parent="#perguntasFrequentes" href="#pergunta5"
+                        aria-expanded="true" aria-controls="pergunta5">→ Precisa de pedido médico para realizar os
+                        exames?</a>
+                    <div id="pergunta5" class="collapse" role="tabpanel">
+                        <p>Somente o médico, após análise clínica, saberá indicar qual exame é mais apropriado para sua
+                            avaliação. Porém, o paciente pode se responsabilizar e realizar exames sem pedido médico
+                            como atendimento particular. Esta responsabilidade é do cliente, lembrando sempre que a
+                            interpretação do resultado do exame é um ato médico.</p>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <section class="container1">
+            <div class="row1">
+                <div class="col1 col2">
+                    <div class="teste">
+                        <p><img src="imagens/icones/phone-call.png" class="icones-footer telefone" alt="" srcset="">(88)
+                            99809-9423 / (88) 99833-9633</p>
+                        <p><img src="imagens/icones/email.png" class="icones-footer email" alt=""
+                                srcset="">laboratorioprolabubj@hotmail.com</p>
+                        <p> <img src="imagens/icones/lugar.png" class="icones-footer lugar" alt="" srcset=""> Rua
+                            Prudêncio
+                            Furtado, N°211 - Centro - Ubajara /CE</p>
+                    </div>
+                </div>
+
+                <div class="col1 col2">
+                    <div class="teste">
+                        <p>Nos encontre nas redes sociais:</p>
+                        <p><a class="navbar-brand"
+                                href="https://www.facebook.com/Laborat%C3%B3rio-Prolab-Ubajara-114600763661039/">
+                                <img src="imagens/icones/facebook.png" class="icones-footer-1" alt="" srcset="">
+                            </a>
+
+                            <a class="navbar-brand" href="https://www.instagram.com/laboratorioprolabubj/">
+                                <img src="imagens/icones/instagram.png" class="icones-footer-2" alt="" srcset="">
+                            </a>
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <a href="https://api.whatsapp.com/message/5Y67HF2JSJW3I1" class="float" target="_blank">
+        <img src="imagens/icones/whatsapp.png" alt="" width="60px">
+    </a>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

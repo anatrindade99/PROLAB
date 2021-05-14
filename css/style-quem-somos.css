@@ -1,0 +1,169 @@
+body {
+  padding-top: 96px;
+}
+.box-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+}
+.bg-estilizado {
+  background-color: rgb(138, 138, 138);
+}
+
+.text-laudo {
+  height: 200px;
+  text-align: center;
+}
+.estilo-text {
+  padding-top: 50px;
+}
+
+.icones-width {
+  width: 110px;
+  height: 110px;
+  margin: 20px;
+}
+
+.grid-valores {
+  border: solid 1px;
+  background-color: rgb(105, 139, 243);
+  margin: 50px;
+  color: white;
+  text-align: center;
+}
+
+.icones-missao {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+.grid-valores:hover {
+  box-shadow: 1px 1px #aaaaaa, 2px 2px #aaaaaa 3px 3px #aaaaaa;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
+.img {
+  max-width: 100%;
+  display: block;
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.text-card-insta {
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex > div {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+/* ICONE DO WHATSAPP */
+.float {
+  right: 25px;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  text-align: center;
+  z-index: 100;
+}
+/* FIM ICONE DO WHATSAPP */
+
+/* INICIO DO FOOTER ESTILIZADO COM CSS */
+
+footer {
+  box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+.container1 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 20px;
+}
+@media (min-width: 1170px) {
+  .container1 {
+    max-width: 1170px;
+    padding: 0px;
+  }
+}
+.row1 {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.row1::before,
+.row1:after {
+  content: "";
+  display: table;
+}
+.row1::after {
+  clear: both;
+}
+
+.col1 {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  margin-right: -4px;
+}
+@media (min-width: 800px) {
+  .col2 {
+    width: 50%;
+  }
+}
+
+.teste {
+  padding-top: 3px;
+  text-align: center;
+  margin: 2px 0;
+}
+
+.big {
+  height: 50px;
+}
+
+.icones-rodape {
+  margin-left: 50px;
+}
+
+.icones-footer {
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+  margin-left: 100px;
+}
+
+.icones-footer-2,
+.icones-footer-1 {
+  width: 30px;
+  height: 30px;
+}
+
+.telefone,
+.email {
+  margin-left: -25px;
+}
+
+@media (max-width: 600px) {
+  .email {
+    margin-right: 60px;
+  }
+  .lugar {
+    margin-left: 42px;
+  }
+  .telefone {
+    margin-right: 60px;
+  }
+}
+
+/* FIM DO FOOTER ESTILIZADO COM CSS */

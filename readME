@@ -1,0 +1,41 @@
+#Projeto individual realizado para o curso SoulCode Academy
+
+##Onde você encontrará os requisitos:
+
+______________________________________________
+HTML: Utilizar <aside> e <article> 
+
+<article> na linha 148 do index.html 
+<aside> na linha 84 da página contato.html
+
+______________________________________________
+
+______________________________________________
+JavaScript: validação de cnpj 
+
+Validação no cnpj na pasta js/script-agendamento.js
+______________________________________________
+
+______________________________________________
+Css: Estilizar o rodapé usando exclusivamente css
+
+Todos rodapés das páginas estão estilizados com css,
+pode encontrar na página css/style a partir da linha
+90
+______________________________________________
+
+______________________________________________
+Jquery : utilizar um que a partir de  220px do topo do body 
+apareça uma seta ao lado direito da pagina que funciona como 
+retorno suave para o inicio da pagina , aplicar essa função 
+na pagina inicial do projeto.
+
+Pode ser encontrado na página js/script-index.js a 
+função para o retorno da página.
+______________________________________________
+
+______________________________________________
+
+
+
+
